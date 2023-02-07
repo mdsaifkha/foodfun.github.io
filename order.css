@@ -1,0 +1,165 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: #fffbf6;
+    color: #302e29;
+    padding: 23px 10%
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: 700;
+    color: #302e29;
+}
+
+span {
+    color: #ff9100;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 5px 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    color: #302e29;
+    transition: border-bottom 0.38s ease, color 0.38s ease;
+}
+
+nav ul li a:hover {
+    border-bottom: 2px solid #ff9100;
+    color: #ff9100;
+}
+
+.icon {
+    background: #ff9100;
+    padding: 10px 22px;
+    border-radius: 5rem;
+}
+
+.icon i {
+    font-size: 22px;
+    color: black;
+    margin-right: 15px;
+    margin-left: 8px;
+    transition: color 0.5s;
+}
+
+i.fa-bars {
+    display: none;
+}
+
+.icon i:hover {
+    color: #fffbf6;
+}
+
+
+.order {
+    width: 100%;
+    height: 100vh;
+    padding: 70px 0;
+    background-image: url(image/bg2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.order h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    font-size: 55px;
+}
+
+.order h1 span {
+    color: #ff9100;
+    margin-right: 15px;
+    font-family: mv boli;
+}
+
+.order h1 span::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #ff9100;
+    display: block;
+    position: relative;
+    bottom: 15px;
+}
+
+.order .order_main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,auto));
+}
+
+.order .order_main .order_image img {
+    width: 375px;
+}
+
+.order .order_main form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0 10px;
+}
+
+.flex-input{
+    display: flex;
+    flex-direction: column;
+}
+
+.order .order_main form .input p {
+    line-height: 25px;
+}
+
+.order .order_main form .input {
+    margin: 5px;
+}
+
+.order .order_main form .input input {
+    width: 300px;
+    height: 35px;
+    padding: 0 10px;
+    border: 2px solid #cccccc;
+    background: #eeeeee;
+    outline: none;
+    border-radius: 3px;
+}
+
+.order .order_main form .input input:focus {
+    border: 2px solid #ff9100;
+}
+
+.order .order_main form .order_btn {
+    padding: 10px 0;
+    background: #ff9100;
+    color: white;
+    width: 40%;
+    height: 40px;
+    border-radius: 15px;
+    text-align: center;
+    margin-top: 20px;
+    text-decoration: none
+}

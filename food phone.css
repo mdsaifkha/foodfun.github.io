@@ -1,0 +1,48 @@
+nav ul {
+    background: #fff;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+}
+
+nav ul.active{
+    right: 0px;
+}
+
+.dis h1{
+    font-size: 39px;
+}
+
+nav ul li {
+    display: block;
+    margin: 30px;
+}
+
+
+i.fa-magnifying-glass {
+    display: none;
+}
+
+i.fa-cart-shopping {
+    display: none;
+}
+
+i.fa-bars {
+    display: block;
+}
+
+i.fa-xmark{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+}
+
+.Breakfast-box:hover {
+    transform: translateX(-30px);
+    cursor: pointer;
+}
